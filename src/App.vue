@@ -1,16 +1,27 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <router-view />
 </template>
 
+<script>
+// import axios from "axios";
+
+export default {
+  // setup() {
+  //   axios
+  //     .get("/sanctum/csrf-cookie")
+  //     .then((res) => {
+  //       console.log(res);
+  //       console.log("csrf-cookie: OK");
+  //     })
+  //     .catch((err) => {
+  //       console.log(err.response);
+  //     });
+  // },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#nav {
   text-align: center;
   color: #2c3e50;
 }
