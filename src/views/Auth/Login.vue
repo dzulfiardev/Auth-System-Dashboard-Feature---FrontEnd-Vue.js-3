@@ -228,7 +228,11 @@ export default {
         }
       } catch (err) {
         form.disabled = false;
-        validate.message = err.data.message;
+        if (err.message) {
+          validate.message = err.message;
+        } else {
+          validate.message = err.data.message;
+        }
       }
     }
 
